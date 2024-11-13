@@ -1,0 +1,44 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+*.env
+
+# Logs
+*.log
+
+# Dependency directories (Ruby, Python, etc.)
+__pycache__/
+*.pyc
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Temporary files
+*.swp
+*.swo
+
+# Generated documentation
+*.pdf
+*.html
+
+# System files
+*.bak
+*.swp

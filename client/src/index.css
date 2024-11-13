@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles here */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+.background-blur {
+  background-image: url('D:/KEC/sem5/full_stack_project/travel/client/public/travel1.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  -webkit-filter: blur(8px); /* For Safari */
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it stays in the background */
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('D:/KEC/sem5/full_stack_project/travel/client/public/travel1.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  -webkit-filter: blur(8px); /* For Safari */
+  z-index: -1; /* Ensure it stays in the background */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better contrast */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure content stays above the blurred background */
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
